@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+
+}
+
+.container__row {
+  display: flex;
+  height: 20vh;
+  border: solid 0.5px black;
+  width: 100%;
+}
+
+.descr {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 20vh;
+  width: 60%;
+  font-size: 2vh;
+  align-items: start;
+  padding-left: 5px;
+}
+
+.price {
+  display: flex;
+  align-self: center;
+  width: 15%;
+  font-size: 3vh;
+  color: blue;
+}
+
+.unit {
+  display: flex;
+  align-self: center;
+  font-size: 3vh;
+  color: blue;
+}
+
+img {
+  width: 20%;
+  object-fit: cover;
+}
+
+.calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4%;
+  align-items: center;
+  font-size: 3vh;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', Courier, monospace;
+  font-style: normal;
+  font-size: 2vw;
+  height: 15%;
+  margin-right: 5%;
+}
+
+#total {
+  display: flex;
+  flex-direction: row;
+}
+
+#total_text {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.sum-result {
+  font-weight: bold;
+  margin-right: 10px;
+  color: blue;
+
+}

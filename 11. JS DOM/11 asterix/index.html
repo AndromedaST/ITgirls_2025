@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Basket</title>
+  </head>
+  <body>
+    <h2>Корзина</h2>
+    <div class="container">
+      <div class="container__row">
+        <img src="./assets/images/1.jpg" alt="" />
+        <div class="descr">
+          <br />
+          RESEDVED Куртка<br /><br />
+          Цвет Белый <br />
+          Размер М <br />
+          Количество 1
+        </div>
+        <div class="price">4500</div>
+        <div class="unit">руб.</div>
+      </div>
+      <div class="container__row">
+        <img src="./assets/images/2.jpg" alt="" />
+        <div class="descr">
+          <br />
+          PARAD Кроссовки<br /><br />
+          Цвет Мультиколор <br />
+          Размер 39 <br />
+          Количество 1
+        </div>
+        <div class="price">2000</div>
+        <div class="unit">руб.</div>
+      </div>
+      <div class="container__row">
+        <img src="./assets/images/3.jpg" alt="" />
+        <div class="descr">
+          <br />
+          LEVI's джинсы<br /><br />
+          Цвет Голубой <br />
+          Размер L <br />
+          Количество 1
+        </div>
+        <div class="price">2300</div>
+        <div class="unit">руб.</div>
+      </div>
+      <div class="container__row">
+        <img src="./assets/images/4.jpg" alt="" />
+        <div class="descr">
+          <br />
+          RENDEZ-VOUS ремень<br /><br />
+          Цвет Черный <br />
+          Размер 90 см <br />
+          Количество 1
+        </div>
+        <div class="price">1200</div>
+        <div class="unit">руб.</div>
+      </div>
+      <div class="calc">
+        <button id="discount" onclick="Discountme()">
+          Использовать купон на 20%
+        </button>
+        <div id="total">
+          <div id="total_text">Итого:</div>
+          <div class="sum-result"></div>
+          <span style="color: blue">руб.</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/script/index.js"></script>
+  </body>
+</html>
