@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Spam filter</title>
+  </head>
+  <body>
+    <h1>Сервис комментариев со спам фильтром</h1>
+    <div class="main">
+      <div class="main__input">
+        <form action="sens">Оставьте ваш комментарий:</form>
+        <br />
+        <label for="FIO">Введите ваше ФИО:</label><br />
+        <input
+          type="text"
+          id="FIO"
+          placeholder="Иванов Иван Иванович"
+        /><br /><br />
+        <label for="avatar">Введите ссылку вашего аватара:</label><br />
+        <input type="text" id="avatar" placeholder="здесь ссылка для аватара" />
+        <br /><br />
+        <label for="txt">Ваши коментарии:</label><br />
+        <textarea
+          id="txt"
+          cols="30"
+          rows="10"
+          placeholder="напишите ваш комментарий"
+          accesskey="f"
+          tabindex="1"
+        ></textarea>
+      </div>
+      <div class="main__output">
+        <div>Чат</div>
+        <div id="userdata">
+          <div id="chat__avatar" alt="1"></div>
+          <div id="chat__FIO">вывод фио</div>
+        </div>
+        <div id="chattxt">вывод чата</div>
+      </div>
+    </div>
+    <button type="submit" id="submitbtn">BUTTON</button>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
