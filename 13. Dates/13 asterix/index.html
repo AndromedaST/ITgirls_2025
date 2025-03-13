@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Spam filter</title>
+  </head>
+  <body>
+    <h1>Сервис комментариев со спам фильтром</h1>
+    <div class="main">
+      <form id="form">
+        <div class="main__input">
+          <h3>Оставьте ваш комментарий:</h3>
+          <p>Показывать ваше имя?</p>
+          да <input type="radio" name="showname" id="yes" /> нет<input
+            type="radio"
+            name="showname"
+            id="no"
+          />
+
+          <label for="name">Введите ваше ФИО:</label><br />
+          <input
+            type="text"
+            id="name"
+            placeholder="Иванов Иван Иванович"
+          /><br /><br />
+          <label for="imagelink">Введите ссылку вашего аватара:</label><br />
+          <input
+            type="text"
+            id="imagelink"
+            placeholder="здесь ссылка для аватара"
+          />
+          <br /><br />
+          <label for="text">Ваши коментарии:</label><br />
+          <textarea
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="напишите ваш комментарий"
+            accesskey="f"
+            tabindex="1"
+          ></textarea>
+          <button type="submit" id="submitbtn">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+      <div class="main__output">
+        <div>Чат</div>
+        <div id="userdata">
+          <div id="chat__avatar" alt="1"></div>
+          <div id="chat__FIO">вывод фио</div>
+          <div id="date">дата</div>
+        </div>
+        <div id="chattxt">вывод чата</div>
+      </div>
+    </div>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>

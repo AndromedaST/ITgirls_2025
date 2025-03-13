@@ -1,0 +1,59 @@
+body {
+    background-color: dimgray;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.main__input {
+    flex-grow: 1;
+}
+
+
+input {
+    border: dashed 1px blue;
+    width: 90%;
+
+}
+
+textarea {
+    border: dashed 1px blue;
+    width: 90%;
+
+}
+
+button {
+    background-color: aqua;
+    flex-shrink: 0;
+}
+
+.main__output {
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+#userdata {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#chat__avatar {
+    width: 5vw;
+    object-fit: contain;
+}
+
+#chat__FIO {
+    max-width: 5vw;
+}
+
+img {
+    width: 100px
+}
